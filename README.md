@@ -173,8 +173,8 @@ MainActivity ◀─────────────────────�
 ## 👨‍💻 Developed By
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+- GitHub: [@kevalrathod12](https://github.com/kevalrathod12)
+- Email: kevalrathod2112@gmail.com
 
 ---
 
@@ -195,4 +195,4 @@ This project is developed for **educational purposes only** as part of a college
 
 ---
 
-<p align="center">Made with ❤️ for college submission</p>
+<p align="center">Made by ❤️ RK</p>
