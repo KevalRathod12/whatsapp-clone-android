@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_chat.xml
+    Chat conversation screen:
+    - Toolbar with the recipient's name
+    - RecyclerView showing messages
+    - Bottom bar with EditText + Send button
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECE5DD">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#075E54"
+        android:titleTextColor="#FFFFFF"
+        app:subtitleTextColor="#B2DFDB"
+        app:navigationIcon="@android:drawable/ic_menu_revert"
+        app:navigationIconTint="#FFFFFF"/>
+
+    <!-- Messages RecyclerView — fills remaining space -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:clipToPadding="false"
+        android:background="#ECE5DD"/>
+
+    <!-- Bottom input bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ECE5DD"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="center_vertical">
+
+        <!-- Message input -->
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type a message"
+            android:background="@drawable/message_input_bg"
+            android:padding="12dp"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:textSize="15sp"/>
+
+        <!-- Send button -->
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:src="@android:drawable/ic_menu_send"
+            android:background="@drawable/send_btn_bg"
+            android:contentDescription="Send Message"
+            android:tint="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>

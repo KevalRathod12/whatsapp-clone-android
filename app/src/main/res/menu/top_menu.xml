@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/more"
+        android:icon="@android:drawable/ic_menu_more"
+        android:title="More"
+        app:showAsAction="always"/>
+
+    <!-- Logout — appears in overflow (3-dot) menu -->
+    <item
+        android:id="@+id/action_logout"
+        android:title="Logout"
+        app:showAsAction="never"/>
+
+</menu>

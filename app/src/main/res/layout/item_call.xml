@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    item_call.xml
+    Each row in the Calls tab:
+    - Circle avatar on left
+    - Name (bold) + call type below
+    - Time on the right
+    - Phone icon on far right
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- Avatar circle -->
+    <ImageView
+        android:id="@+id/imgCallAvatar"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@android:drawable/ic_menu_call"
+        android:background="@drawable/circle_bg"
+        android:scaleType="centerInside"
+        android:tint="#FFFFFF"
+        android:padding="12dp"/>
+
+    <!-- Name + Call type -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="14dp">
+
+        <TextView
+            android:id="@+id/tvCallName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rahul"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#111111"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="3dp">
+
+            <!-- Arrow icon for call direction -->
+            <ImageView
+                android:id="@+id/imgCallArrow"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@android:drawable/arrow_down_float"
+                android:layout_marginEnd="4dp"/>
+
+            <TextView
+                android:id="@+id/tvCallType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incoming"
+                android:textSize="13sp"
+                android:textColor="#8696A0"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Time on the right -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvCallTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:45 AM"
+            android:textSize="11sp"
+            android:textColor="#8696A0"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_menu_call"
+            android:tint="#25D366"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    item_status.xml
+    Each row in the Status tab:
+    - Coloured circle avatar on left
+    - Name (bold) + time below
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- Avatar circle -->
+    <ImageView
+        android:id="@+id/imgStatusAvatar"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:background="@drawable/circle_bg"
+        android:scaleType="centerInside"
+        android:tint="#FFFFFF"
+        android:padding="10dp"/>
+
+    <!-- Name + Time stack -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="14dp">
+
+        <TextView
+            android:id="@+id/tvStatusName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rahul Sharma"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#111111"/>
+
+        <TextView
+            android:id="@+id/tvStatusTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 minutes ago"
+            android:textSize="13sp"
+            android:textColor="#8696A0"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

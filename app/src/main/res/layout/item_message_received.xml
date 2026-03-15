@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    item_message_received.xml
+    Layout for messages received FROM another user.
+    - White/grey bubble aligned to the LEFT side
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="start"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bubble_received"
+        android:padding="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="60dp"
+        android:maxWidth="280dp">
+
+        <!-- Message text -->
+        <TextView
+            android:id="@+id/tvMessageReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textColor="#111111"
+            android:textSize="15sp"/>
+
+        <!-- Timestamp -->
+        <TextView
+            android:id="@+id/tvTimeReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:45 AM"
+            android:textColor="#667781"
+            android:textSize="10sp"
+            android:layout_gravity="end"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
